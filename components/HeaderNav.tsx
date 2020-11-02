@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import LogoImg from '../assets/logo.png';
 import DownImg from '../assets/downarrow.png';
@@ -11,11 +11,21 @@ const links = [
   },
   {
     href: '#',
-    label: 'Loan'
+    label: 'Loans',
+    children: [
+      {
+        label: 'Personal loans',
+        href: '/personal-loan'
+      }, {
+        label: 'Home loans',
+        href: '/home-loan'
+      }
+    ]
   },
   {
     href: '#',
-    label: 'Resources'
+    label: 'Resources',
+    children: []
   },
   {
     href: '/about',
@@ -24,16 +34,18 @@ const links = [
 ]
 
 const HeaderNav = () => {
+  const [selectedNav, setSelectedNav] = useState('')
+
   return (
     <div className="header-nav-wrapper">
       <Link href="/">
-        <img src={LogoImg} alt="logo-img" />
+        <img src={LogoImg} alt="logo-img" className="logo-img" />
       </Link>
 
       <div className="header-nav-items">
         {
           links.map((item, index) => {
-            if (item.label !== 'Loan' && item.label !== 'Resources')
+            if (!item.children?.length && item.label !== 'Resources')
               return (
                 <Link href={item.href} key={index.toString()}>
                   <div className="header-nav-item">
@@ -43,11 +55,22 @@ const HeaderNav = () => {
               )
             else {
               return (
-                <div key={index.toString()}>
-                  <div className="header-nav-item">
+                <div key={index.toString()} className="header-menu">
+                  <div className="header-nav-item" onClick={() => { if (selectedNav === item.label) { setSelectedNav('') } else { setSelectedNav(item.label) } }}>
                     {item.label}
                     <img src={DownImg} style={{ marginLeft: 5 }} />
                   </div>
+                  {
+                    selectedNav === item.label &&
+                    <div className="header-submenu">
+                      {item.children?.map((subMenu, index) => (
+                        <Link href={subMenu.href} key={index.toString()}>
+                          <div>{subMenu.label}</div>
+                        </Link>
+                      ))}
+                    </div>
+                  }
+
                 </div>
               )
             }
