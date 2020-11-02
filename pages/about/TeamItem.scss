@@ -1,0 +1,67 @@
+@import '../../styles/base.scss';
+
+.team-item {
+  display: flex;
+
+  &-img-wrapper {
+    img {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+  }
+
+  &-content {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  &-name {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;    
+    color: #FF5A3D;        
+  }
+
+  &-mission {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0B0303;
+  }
+
+  &-social {
+   display: flex; 
+   margin-top: 6px;
+   align-items: flex-end;
+   
+   a {
+     height: 30px;
+   }
+
+   img {
+     height: fit-content;
+   }
+  }
+
+  &-divider {
+    height: 1px;
+    background-color: rgba(29, 28, 28, 0.25);
+    margin-top: 10px;
+  }
+
+  &-desc {
+    margin-top: 12.5px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #0B0303;
+  }
+}

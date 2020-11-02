@@ -1,15 +1,14 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { useEffect } from 'react';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  useEffect(() => {
+    //@ts-ignore
+    window.location.href = window.location.href + 'intelligent-finance';
+  }, [])
 
-export default IndexPage
+  return (
+    <div>Loading...</div>
+  )
+}
+
+export default IndexPage;

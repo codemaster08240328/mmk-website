@@ -1,0 +1,169 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './media.scss';
+@import './size.scss';
+@import './global.scss';
+
+$sizes: (
+  '0': 0px,
+  '5': 5px,
+  '8': 8px,
+  '10': 10px,
+  '12': 12px,
+  '15': 15px,
+  '16': 16px,
+  '18': 18px,
+  '20': 20px,
+  '24': 24px,
+  '25': 25px,
+  '30': 30px,
+  '32': 32px,
+  '36': 36px,
+  '40': 40px,
+  '80': 80px,
+  '91': 91px,
+  '98': 98px,
+);
+
+.pl {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      padding-left: $size;
+    }
+  }
+}
+
+.pr {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      padding-right: $size;
+    }
+  }
+}
+
+.pt {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      padding-top: $size;
+    }
+  }
+}
+
+.pb {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      padding-bottom: $size;
+    }
+  }
+}
+
+.ml {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      margin-left: $size;
+    }
+  }
+}
+
+.mr {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      margin-right: $size;
+    }
+  }
+}
+
+.mt {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      margin-top: $size;
+    }
+  }
+}
+
+.mb {
+  @each $name, $size in $sizes {
+    &-#{$name} {
+      margin-bottom: $size;
+    }
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.active-btn {
+  background-color: $mmk-yellow!important;
+}
+
+.mmk-btn {
+  border: none;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 0.13px;
+  line-height: 74px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Helvetica Neue";
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  line-height: 58px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Helvetica Neue";
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.0784906px;
+  color: #010101;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.0378437px;
+  margin: 0;
+}
+
+p {
+  font-family: "Helvetica Neue";
+  font-size: 21px;
+  letter-spacing: 0.04px;
+  line-height: 30px;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-family: "Helvetica Neue";
+  font-size: 21px;
+  letter-spacing: 0.04px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.page-row {
+  display: inline-flex;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+

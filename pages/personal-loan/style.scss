@@ -1,0 +1,73 @@
+@import '../../styles/base.scss';
+
+.pl-content {
+  padding: 140px 50px;
+  max-width: 1340px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex!important;
+
+  &-text {
+    width: 50%;
+    font-family: "Helvetica Neue";
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+      margin-top: 26px;
+      // list-style: none;
+      li {
+        margin-top: 13px;
+        margin-left: 13px;
+        padding-left: 13px;
+
+        &::marker {
+          content: '✓';
+          margin-right: 13px; 
+        }
+      }
+
+    }
+  }
+
+  &-img-wrapper {
+    width: 50%;
+  }
+}
+
+.pl-hiw {
+  background: linear-gradient(112.56deg, rgba(23, 131, 232, 0.0590035) 13.28%, rgba(19, 49, 226, 0.202278) 81.91%);
+  padding: 60px 0 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &-steps {
+    margin-top: 88px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+
+    .step-text {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 25px;
+      /* identical to box height */
+
+      letter-spacing: 0.0515094px;
+      text-transform: uppercase;
+
+      color: #30109C;
+    }
+    
+    &-item {
+      width: 345px;
+    }
+  }
+}

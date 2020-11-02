@@ -1,0 +1,40 @@
+@import '../../../styles/base.scss';
+
+.get-intelligent-wrapper {
+  text-align: center;
+  height: 528px;
+  background-color: #4e54d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $mmk-white;
+
+  button {
+    margin-top: 59px;
+    width: 263px;
+    height: 92px;
+    border-radius: 37px;
+    background-color: #f5a623;
+    color: $mmk-white;
+    font-family: HelveticaNeue;
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.07px; 
+    text-transform: uppercase;
+  }
+
+  &-short-txt {
+    margin-top: 10px;
+    display: flex;
+
+    align-items: center;
+
+    p {
+      margin-right: 8px;
+    }
+  }
+}

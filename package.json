@@ -5,10 +5,15 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "export": "next export",
+    "deploy": "aws s3 sync out s3://mmk-website/"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "latest",
+    "next-images": "^1.6.2",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

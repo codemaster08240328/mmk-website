@@ -1,0 +1,136 @@
+@import '../styles/base.scss';
+
+.footer {
+  &-links {
+    text-transform: uppercase;
+    color: $mmk-white;
+    background-color: #4E54D0;
+    
+    &-title {
+      padding: 52px 0;
+      border: 1px solid rgba(151, 151, 151, 0.233965);
+      h4 {
+        text-align: center;
+      }
+
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+
+    .link-wrapper {
+      padding: 72px 82px 90px 82px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1440px;
+      margin: 0 auto;
+
+      a {
+        font-family: 'HelveticaNeue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.0336389px;
+        color: #FFFFFF;
+        margin-bottom: 17px;
+        text-transform: none;
+        text-decoration: none;
+      }
+
+      &-tool {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-bank {
+        display: flex;
+
+        .links {
+          margin-right: 30px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .link-title, .link-title-bank {
+        margin-bottom: 24px;
+        font-family: 'Avenir Next';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        letter-spacing: 0.0378437px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        
+      }
+      .link-title-bank {
+        text-align: center;
+      }
+    }
+  }
+
+  &-content {
+    background: linear-gradient(0deg, #6FA7F9 -12.96%, #4E54D0 69.5%);
+    border: 1px solid #979797;
+
+    &-wrapper {
+      max-width: 1440px;
+      padding: 40px 82px 48px 82px;
+      margin: 0 auto;
+
+      .footer-contact {
+        color: $mmk-white;
+
+        h4 {
+          text-transform: uppercase;
+        }
+
+        p {
+          margin-top: 13px;
+          font-size: 16px!important;
+          line-height: 28px;
+          letter-spacing: 0.0336389px;
+        }
+      }
+
+      .footer-social {
+        display: flex;
+        padding: 48px 0;
+      }
+
+      .footer-declaimer {
+        margin-top: 18.5px;
+        
+        p {
+          color: $mmk-white;
+          font-size: 16px!important;
+          line-height: 28px;
+          letter-spacing: 0.0336389px;
+        }
+
+        .page-row {
+          width: 100%;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          img {
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
