@@ -89,7 +89,7 @@ const IntelligentFinance = () => (
     <h2 className="bank-partner-title">Banking Partners</h2>
     <div className="bank-partner-wrapper">
       {banks.map((item, index) => (
-        <div className="bank-img-wrapper">
+        <div className="bank-img-wrapper" key={index.toString()}>
           {item && <img src={item} alt={`${index}-bank-img`} />}
         </div>
       ))}
