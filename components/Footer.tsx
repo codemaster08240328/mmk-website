@@ -7,10 +7,21 @@ import LinkedinIcon from '../assets/footer/linkedin.png'
 import DmcaIcon from '../assets/footer/dmca.png'
 
 import './footer.scss';
+import Link from 'next/link';
 
-const socialIcons = [
-  TwitterIcon, FacebookIcon, LinkedinIcon, WordpressIcon
-]
+const socialIcons = [{
+  src: TwitterIcon,
+  href: 'https://twitter.com/mymoneykarma'
+}, {
+  src: FacebookIcon,
+  href: 'https://www.facebook.com/mymoneykarma'
+}, {
+  src: LinkedinIcon,
+  href: 'https://www.linkedin.com/company/mymoneykarma/'
+}, {
+  src: WordpressIcon,
+  href: 'https://www.mymoneykarma.com/blog'
+}]
 
 const Footer = () => {
   const [openLink, setOpenLink] = useState(false)
@@ -109,7 +120,9 @@ const Footer = () => {
           <div className="divider mt-80"></div>
           <div className="footer-social">
             {socialIcons.map((item, index) => (
-              <img src={item} alt={`Social Icon ${index}`} key={index.toString()} className="mr-20" />
+              <a href={item.href} key={index.toString()}>
+                <img src={item.src} alt={`Social Icon ${index}`} className="mr-20" />
+              </a>
             ))}
           </div>
           <div className="divider"></div>
