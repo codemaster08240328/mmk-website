@@ -31,7 +31,7 @@ const GoldLoan = () => {
             <h1>No stress gold loans from the market leaders</h1>
             <button className="mmk-btn header-content-btn active-btn">Start now</button>
           </div>
-          <div className="header-content-img-wrapper">
+          <div className="header-content-img-wrapper w-35">
             <img src={HomeImg} alt="home_img" />
           </div>
         </div>

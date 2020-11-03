@@ -19,6 +19,9 @@ const links = [
       }, {
         label: 'Home loans',
         href: '/home-loan'
+      }, {
+        label: 'Gold loans',
+        href: '/gold-loan'
       }
     ]
   },
