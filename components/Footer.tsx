@@ -7,7 +7,6 @@ import LinkedinIcon from '../assets/footer/linkedin.png'
 import DmcaIcon from '../assets/footer/dmca.png'
 
 import './footer.scss';
-import Link from 'next/link';
 
 const socialIcons = [{
   src: TwitterIcon,
