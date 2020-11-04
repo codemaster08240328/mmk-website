@@ -101,34 +101,34 @@ const teams: Array<TProps> = [
   }
 ]
 
-const advisers: Array<TProps> = [
-  {
-    img: RamImg,
-    name: 'Ram Subramaniam',
-    desc: (
-      <div>
-        Ram is passionate about applying technology and analytics to improve service standards in the consumer financial services industry. He is a serial entrepreneur, who has founded and run successful technology start-ups. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
-      </div>
-    ),
-    mission: 'Cofounder',
-    bank1: StanfordImg,
-    bank2: CitiBankImg,
-    social: 'https://www.linkedin.com/in/ramsubra'
-  },
-  {
-    img: RohanImg,
-    name: 'Rohan Arora',
-    desc: (
-      <div>
-        Rohan prides himself in crafting tranformational journeys to deliver value and customer delight. He has previously worked in FMCG and Media and leveraged those experiences to found and run his own acclaimed foodtech venture. He holds a Computer Engineering Degree from the University of Rajasthan and an <b>MBA from FMS Delhi.</b>
-      </div>
-    ),
-    mission: 'Cofounder',
-    bank1: FmsImg,
-    bank2: HuiImg,
-    social: 'https://www.linkedin.com/in/rohan-arora-bueno/'
-  },
-]
+// const advisers: Array<TProps> = [
+//   {
+//     img: RamImg,
+//     name: 'Ram Subramaniam',
+//     desc: (
+//       <div>
+//         Ram is passionate about applying technology and analytics to improve service standards in the consumer financial services industry. He is a serial entrepreneur, who has founded and run successful technology start-ups. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
+//       </div>
+//     ),
+//     mission: 'Cofounder',
+//     bank1: StanfordImg,
+//     bank2: CitiBankImg,
+//     social: 'https://www.linkedin.com/in/ramsubra'
+//   },
+//   {
+//     img: RohanImg,
+//     name: 'Rohan Arora',
+//     desc: (
+//       <div>
+//         Rohan prides himself in crafting tranformational journeys to deliver value and customer delight. He has previously worked in FMCG and Media and leveraged those experiences to found and run his own acclaimed foodtech venture. He holds a Computer Engineering Degree from the University of Rajasthan and an <b>MBA from FMS Delhi.</b>
+//       </div>
+//     ),
+//     mission: 'Cofounder',
+//     bank1: FmsImg,
+//     bank2: HuiImg,
+//     social: 'https://www.linkedin.com/in/rohan-arora-bueno/'
+//   },
+// ]
 
 const About = () => {
   return (
