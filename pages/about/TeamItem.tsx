@@ -1,5 +1,6 @@
 import React from 'react';
 import InImg from '../../assets/mission/in.png';
+import IllustrationImg from '../../assets/mission/illustration.png';
 import './TeamItem.scss';
 
 export type TProps = {
@@ -15,7 +16,8 @@ export type TProps = {
 const TeamItem = ({ img, name, mission, desc, social, bank1, bank2 }: TProps) => (
   <div className="team-item">
     <div className="team-item-img-wrapper">
-      <img src={img} alt="profile_img" />
+      <img src={IllustrationImg} alt="illustration_img" className="team-profile-bg" />
+      <img src={img} className="team-profile-img" alt="profile_img" />
     </div>
     <div className="team-item-content">
       <div className="team-item-name">{name}</div>

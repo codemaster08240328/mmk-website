@@ -22,30 +22,17 @@ import TeamItem, { TProps } from './TeamItem';
 
 const teams: Array<TProps> = [
   {
-    img: RamImg,
-    name: 'Ram Subramaniam',
+    img: SidImg,
+    name: 'Siddhartha Shekhar Singh',
     desc: (
       <div>
-        Ram is passionate about applying technology and analytics to improve service standards in the consumer financial services industry. He is a serial entrepreneur, who has founded and run successful technology start-ups. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
+        Siddhartha is passionate about making a positive impact in the lives of people by helping them manage their finances well. He is an experienced consumer banking professional who has worked in insurance, lending, and wealth management businesses. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
       </div>
     ),
-    mission: 'Cofounder',
+    mission: 'Cofounder CEO',
     bank1: StanfordImg,
     bank2: CitiBankImg,
-    social: 'https://www.linkedin.com/in/ramsubra'
-  },
-  {
-    img: VarunImg,
-    name: 'Varun Agarwal',
-    desc: (
-      <div>
-        Varun is passionate about creating an ecosystem in the financial services space in which all parties can benefit. He is an experienced consumer services professional who has worked in wealth management and insurance business. He has a Master’s degree from <b>Alliance Business Academy.</b>
-      </div>
-    ),
-    mission: 'COO India',
-    bank1: KarvyImg,
-    bank2: CitiBankImg,
-    social: 'https://in.linkedin.com/in/varun-mymoneykarma'
+    social: 'https://www.linkedin.com/in/siddhartha-shekhar-singh-3733105/'
   },
   {
     img: AlexImg,
@@ -61,17 +48,30 @@ const teams: Array<TProps> = [
     social: 'https://www.linkedin.com/in/alexanderharo/'
   },
   {
-    img: SidImg,
-    name: 'Siddhartha Shekhar Singh',
+    img: VarunImg,
+    name: 'Varun Agarwal',
     desc: (
       <div>
-        Siddhartha is passionate about making a positive impact in the lives of people by helping them manage their finances well. He is an experienced consumer banking professional who has worked in insurance, lending, and wealth management businesses. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
+        Varun is passionate about creating an ecosystem in the financial services space in which all parties can benefit. He is an experienced consumer services professional who has worked in wealth management and insurance business. He has a Master’s degree from <b>Alliance Business Academy.</b>
       </div>
     ),
-    mission: 'Cofounder CEO',
+    mission: 'COO India',
+    bank1: KarvyImg,
+    bank2: CitiBankImg,
+    social: 'https://in.linkedin.com/in/varun-mymoneykarma'
+  },
+  {
+    img: RamImg,
+    name: 'Ram Subramaniam',
+    desc: (
+      <div>
+        Ram is passionate about applying technology and analytics to improve service standards in the consumer financial services industry. He is a serial entrepreneur, who has founded and run successful technology start-ups. He has a Master’s degree from <b>Stanford Graduate School of Business.</b>
+      </div>
+    ),
+    mission: 'Cofounder',
     bank1: StanfordImg,
     bank2: CitiBankImg,
-    social: 'https://www.linkedin.com/in/siddhartha-shekhar-singh-3733105/'
+    social: 'https://www.linkedin.com/in/ramsubra'
   },
   {
     img: KunalImg,
@@ -149,13 +149,13 @@ const About = () => {
       </div>
       <div className="about-content">
         <div className="about-who">
-          <h2 className="mt-91">Who</h2>
+          <h2 className="mt-91">Leadership</h2>
           <p>
-            We are a group of Stanford alumni with a strong background in banking and technology, passionate about creating a positive impact in the lives of people by helping them manage their finances better. We believe that no two people have the same financial situation, so they should not be given one-size-fits-all financial recommendations. <br /><br /> We are providing <b>FREE</b> and <b>EASY</b> access to personalized financial management using proprietary algorithms.
+          “We are a group of Stanford alumni with a strong background in banking and technology, passionate about creating a positive impact in the lives of people by helping them manage their finances better. We believe that no two people have the same financial situation, so they should not be given one-size-fits-all financial recommendations. <br /><br /> We are providing <b>FREE</b> and <b>EASY</b> access to personalized financial management using proprietary algorithms.”
           </p>
         </div>
         <div className="about-team">
-          <h2>Team</h2>
+          <h2>Our Team</h2>
           <div className="about-team-members">
             {
               teams.map((item, index) => (
@@ -175,7 +175,7 @@ const About = () => {
             }
           </div>
         </div>
-        <div className="about-advisers">
+        {/* <div className="about-advisers">
           <h2>Advisers</h2>
           <div className="about-advisers-members">
             {
@@ -195,7 +195,7 @@ const About = () => {
               ))
             }
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
