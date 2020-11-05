@@ -55,13 +55,13 @@ const GoldLoan = () => {
           {
             steps.map((item, index) => (
               <div className="gl-hiw-steps-item" key={index.toString()}>
-                <span className="step-text">
+                <h4>
                   {`Step${index + 1}`}
-                </span>
-                <h3>
+                </h4>
+                <h2 className="mt-16">
                   {item.title}
-                </h3>
-                <p>
+                </h2>
+                <p className="mt-32">
                   {item.description}
                 </p>
               </div>

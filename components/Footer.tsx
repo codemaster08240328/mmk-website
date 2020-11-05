@@ -28,7 +28,7 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-links">
         <div className="footer-links-title" onClick={() => setOpenLink(!openLink)}>
-          <h4>Most searched links +</h4>
+          <h4 className="color-text-white">Most searched links +</h4>
         </div>
         {
           openLink &&
@@ -113,8 +113,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-wrapper">
           <div className="footer-contact">
-            <h4>Questions</h4>
-            <p>Email us at: <br /> askus[at]mymoneykarma[dot]com</p>
+            <h4 className="color-text-white">Questions</h4>
+            <div className="p2-small color-text-white mt-12">Email us at: <br /> askus[at]mymoneykarma[dot]com</div>
           </div>
           <div className="divider mt-80"></div>
           <div className="footer-social">
@@ -126,13 +126,13 @@ const Footer = () => {
           </div>
           <div className="divider"></div>
           <div className="footer-declaimer">
-            <p>
+            <div className="p2-small color-text-white">
               Disclaimer: The credit score provided by mymoneykarma is from Equifax. Visitors looking for their credit scores from any other Credit Information Company, are requested to refer to the official website of the concerned company for further details. Any reference to these Credit Information Companies on mymoneykarma website are strictly informative; mymoneykarma doesn't directly transact with them.
-            </p>
+            </div>
             <div className="page-row mt-98">
-              <p>
+              <div className="p2-small color-text-white">
                 © 2018 mymoneykarma, All Rights ReservedTerms and <br /> ConditionsPrivacy PolicySecurity Disclaimer
-              </p>
+              </div>
               <img src={DmcaIcon} alt="dmcaicon" />
             </div>
           </div>

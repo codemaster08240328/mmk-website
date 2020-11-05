@@ -115,11 +115,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Helvetica Neue";
-  font-size: 48px;
-  font-weight: bold;
-  letter-spacing: 0.1px;
-  line-height: 58px;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  letter-spacing: 0.0784906px;
+  color: #010101;
+
   margin: 0;
 }
 
@@ -130,14 +135,21 @@ h3 {
   letter-spacing: 0.0784906px;
   color: #010101;
   font-weight: normal;
+  margin: 0;
 }
 
 h4 {
-  font-family: "Helvetica Neue";
+  font-family: 'Helvetica Neue';
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  /* identical to box height */
+
   letter-spacing: 0.0378437px;
+  text-transform: uppercase;
+
+  color: #30109C;
   margin: 0;
 }
 
@@ -146,8 +158,8 @@ p {
   font-size: 21px;
   letter-spacing: 0.04px;
   line-height: 30px;
-  margin: 0;
   color: rgba(5, 5, 5, 0.8);
+  margin: 0;
 }
 
 ul {

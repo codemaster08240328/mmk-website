@@ -36,7 +36,7 @@ const FAQ = ({ title, q_as }: TProps) => {
   const [viewMore, setViewMore] = useState(false)
   return (
     <div className="faq-wrapper">
-      <h2>{title}</h2>
+      <h1 className="color-text-white">{title}</h1>
       {
         q_as.map((item, index) => {
           if (!viewMore && index > 3) {
