@@ -20,13 +20,7 @@
   }
 
   &-item {
-    color: $mmk-white;
-    font-family: "Helvetica Neue";
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.04px;
-    line-height: 23px;
-    text-transform: uppercase;
+    @include font-frame-3();
 
     &:hover {
       cursor: pointer;

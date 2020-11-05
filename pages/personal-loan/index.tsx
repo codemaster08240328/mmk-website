@@ -127,8 +127,8 @@ const PersonalLoan = () => {
         <HeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
-            <h1>Personal Loans at Lowest Interest Rates</h1>
-            <p className="header-content-description">Our recommendation engine finds the loan best suited to your needs in less than 60 seconds.</p>
+            <div className="header-content-hero-title">Personal Loans at Lowest Interest Rates</div>
+            <div className="header-content-hero-subtitle">Our recommendation engine finds the loan best suited to your needs in less than 60 seconds.</div>
           </div>
           <div className="header-content-img-wrapper">
             <img src={HomeImg} alt="home_img" />
@@ -137,11 +137,11 @@ const PersonalLoan = () => {
       </div>
       <div className="page-row pl-content">
         <div className="pl-content-text">
-          <h2>Why get a personal loan from us?</h2>
+          <h1>Why get a personal loan from us?</h1>
           <ul>
-            <li>Matched to best option in 60 seconds or less.</li>
-            <li>100% online.</li>
-            <li>Approved in 1 hour or less.</li>
+            <li><p>Matched to best option in 60 seconds or less.</p></li>
+            <li><p>100% online.</p></li>
+            <li><p>Approved in 1 hour or less.</p></li>
           </ul>
         </div>
         <div className="pl-content-img-wrapper">

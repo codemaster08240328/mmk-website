@@ -28,7 +28,7 @@ const GoldLoan = () => {
         <HeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
-            <h1>No stress gold loans from the market leaders</h1>
+            <div className="header-content-hero-title">No stress gold loans from the market leaders</div>
             <button className="mmk-btn header-content-btn active-btn">Start now</button>
           </div>
           <div className="header-content-img-wrapper w-35">
@@ -38,11 +38,11 @@ const GoldLoan = () => {
       </div>
       <div className="page-row gl-content">
         <div className="gl-content-text">
-          <h2>Why get your gold loan from us?</h2>
+          <h1>Why get your gold loan from us?</h1>
           <ul>
-            <li>Highest value for your gold.</li>
-            <li>Lowest interest rates in the market.</li>
-            <li>Get money in your account in less than 1 hour.</li>
+            <li><p>Highest value for your gold.</p></li>
+            <li><p>Lowest interest rates in the market.</p></li>
+            <li><p>Get money in your account in less than 1 hour.</p></li>
           </ul>
         </div>
         <div className="gl-content-img-wrapper">
@@ -50,7 +50,7 @@ const GoldLoan = () => {
         </div>
       </div>
       <div className="gl-hiw">
-        <h2>Here's how it works</h2>
+        <h1>Here's how it works</h1>
         <div className="gl-hiw-steps">
           {
             steps.map((item, index) => (

@@ -60,8 +60,8 @@ const IntelligentFinance = () => (
       <HeaderNav />
       <div className="header-content">
         <div className="header-content-text" >
-          <h1>Intelligent Finance</h1>
-          <p className="header-content-description">Faster, easier and secure way of managing your money.</p>
+          <div className="header-content-hero-title">Intelligent Finance</div>
+          <div className="header-content-hero-subtitle">Faster, easier and secure way of managing your money.</div>
           <button className="mmk-btn header-content-btn active-btn">Get started</button>
         </div>
         <div className="header-content-img-wrapper">
@@ -70,7 +70,6 @@ const IntelligentFinance = () => (
       </div>
     </div>
     <div className="intelligence-page-content">
-
       {
         contents.map((item, index) => (
           <div className={index % 2 === 0 ? "page-row" : "page-row reversed"} key={index.toString()}>
@@ -78,7 +77,7 @@ const IntelligentFinance = () => (
               <img src={item.imgSrc} alt={`page_content_row_image_${index}`} />
             </div>
             <div className="page-row-item-content">
-              <h2>{item.title}</h2>
+              <h1>{item.title}</h1>
               <p className="pr-40 mt-24">{item.description}</p>
             </div>
           </div>

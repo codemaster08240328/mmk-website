@@ -190,10 +190,10 @@ const HomeLoan = () => {
         <HeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
-            <h1>Home Loans at Lowest Interest Rates</h1>
-            <p className="header-content-description">
+            <div className="header-content-hero-title">Home Loans at Lowest Interest Rates</div>
+            <div className="header-content-hero-subtitle">
               A home is a huge investment, and buying a home can be stressful. We help you understand your options and simhlify your journey toward owning your dream home.
-            </p>
+            </div>
             <button className="mmk-btn header-content-btn active-btn">See my options</button>
           </div>
           <div className="header-content-img-wrapper">
@@ -203,11 +203,11 @@ const HomeLoan = () => {
       </div>
       <div className="page-row hl-content">
         <div className="hl-content-text">
-          <h2>Why get your home loan from us?</h2>
+          <h1>Why get your home loan from us?</h1>
           <ul>
-            <li>Save time by evaluating offers from many of <br /> {'   the top providers in the market in one place.'}</li>
-            <li>Get matched with the cheapest home loan offer <br /> {`   `} in the market.</li>
-            <li>Get expedited approvals.</li>
+            <li><p>Save time by evaluating offers from many of <br /> the top providers in the market in one place.</p></li>
+            <li><p>Get matched with the cheapest home loan offer <br /> in the market.</p></li>
+            <li><p>Get expedited approvals.</p></li>
           </ul>
         </div>
         <div className="hl-content-img-wrapper">
@@ -215,7 +215,7 @@ const HomeLoan = () => {
         </div>
       </div>
       <div className="hl-hiw">
-        <h2>Here's how it works</h2>
+        <h1>Here's how it works</h1>
         <div className="hl-hiw-steps">
           {
             steps.map((item, index) => (

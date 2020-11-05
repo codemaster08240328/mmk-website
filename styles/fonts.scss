@@ -3,6 +3,44 @@
   font-weight: $font-weight;
 }
 
+@mixin font-frame-3() {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.0378437px;
+  text-transform: uppercase;
+
+  color: $mmk-white;
+}
+
+@mixin font-hero-title {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.126146px;
+
+  color: $mmk-white;
+}
+
+@mixin font-hero-subtitle {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height, or 129% */
+
+  letter-spacing: 0.044151px;
+
+  color: $mmk-white;
+}
+
+
+
 .font {
   &-calibri {
     &-bold {

@@ -200,11 +200,9 @@ const CreditScore = () => {
       <div className="header pb-0">
         <HeaderNav />
         <div className="header-content">
-          <div className="header-content-text w-65" >
-            <h1>Credit Scores are Complex</h1>
-            <p className="header-content-description">
-              We simplify them for you.
-            </p>
+          <div className="header-content-text w-65"  style={{marginTop: 180}}>
+            <div className="header-content-hero-title">Credit Scores are Complex</div>
+            <div className="header-content-hero-subtitle">We simplify them for you.</div>
             <button className="mmk-btn header-content-btn active-btn">Start now</button>
           </div>
           <div className="header-content-img-wrapper w-35">

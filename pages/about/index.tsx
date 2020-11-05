@@ -136,11 +136,11 @@ const About = () => {
       <div className="header">
         <HeaderNav />
         <div className="header-content">
-          <div className="header-content-text" >
-            <h1>Our mission</h1>
-            <p className="header-content-description">
+          <div className="header-content-text" style={{marginTop: 200}} >
+            <div className="header-content-hero-title">Our mission</div>
+            <div className="header-content-hero-subtitle">
               Provide financial products that improve lives.
-            </p>
+            </div>
           </div>
           <div className="header-content-img-wrapper">
             <img src={HomeImg} alt="home_img" />
@@ -149,13 +149,13 @@ const About = () => {
       </div>
       <div className="about-content">
         <div className="about-who">
-          <h2 className="mt-91">Leadership</h2>
+          <h1 className="mt-91">Leadership</h1>
           <p>
           “We are a group of Stanford alumni with a strong background in banking and technology, passionate about creating a positive impact in the lives of people by helping them manage their finances better. We believe that no two people have the same financial situation, so they should not be given one-size-fits-all financial recommendations. <br /><br /> We are providing <b>FREE</b> and <b>EASY</b> access to personalized financial management using proprietary algorithms.”
           </p>
         </div>
         <div className="about-team">
-          <h2>Our Team</h2>
+          <h1>Our Team</h1>
           <div className="about-team-members">
             {
               teams.map((item, index) => (
