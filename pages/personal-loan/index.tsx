@@ -149,7 +149,7 @@ const PersonalLoan = () => {
         </div>
       </div>
       <div className="pl-hiw">
-        <h2>Here's how it works</h2>
+        <h1>Here's how it works</h1>
         <div className="pl-hiw-steps">
           {
             steps.map((item, index) => (

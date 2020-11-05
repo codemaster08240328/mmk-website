@@ -212,11 +212,11 @@ const CreditScore = () => {
       </div>
       <div className="page-row cs-content">
         <div className="cs-content-text">
-          <h2>Why us?</h2>
+          <h1>Why us?</h1>
           <ul>
-            <li>Free credit score analysis.</li>
-            <li>Simplified credit report to help you understand <br /> your score.</li>
-            <li>Personalized credit score insights to help you <br /> improve your score.</li>
+            <li><p>Free credit score analysis.</p></li>
+            <li><p>Simplified credit report to help you understand <br /> your score.</p></li>
+            <li><p>Personalized credit score insights to help you <br /> improve your score.</p></li>
           </ul>
         </div>
         <div className="cs-content-img-wrapper">
@@ -224,7 +224,7 @@ const CreditScore = () => {
         </div>
       </div>
       <div className="cs-hiw">
-        <h2>Here's how it works</h2>
+        <h1>Here's how it works</h1>
         <div className="cs-hiw-steps">
           {
             steps.map((item, index) => (
