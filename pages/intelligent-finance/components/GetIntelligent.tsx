@@ -5,7 +5,7 @@ import './GetIntelligent.scss';
 
 const GetIntelligent = () => (
   <div className="get-intelligent-wrapper">
-    <h2>Get Intelligent about your finances</h2>
+    <h1>Get Intelligent about your finances</h1>
 
     <button className="mmk-btn active-btn">Sign Up</button>
     <div className="get-intelligent-wrapper-short-txt">
