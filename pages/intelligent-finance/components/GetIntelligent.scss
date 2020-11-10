@@ -10,8 +10,17 @@
   justify-content: center;
   color: $mmk-white;
 
+  @include media('<tablet') {
+    height: fit-content;
+    padding: 32px 0 44px 0;
+  }
+
   h1 {
     color: white;
+
+    @include media('<tablet') {
+      padding: 0 76px;
+    }
   }
 
   button {
@@ -29,6 +38,15 @@
     line-height: normal;
     letter-spacing: 0.07px; 
     text-transform: uppercase;
+
+    @include media('<tablet') {
+      height: 56px;
+      width: 240px;
+      border-radius: 24px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 32px;
+    }
   }
 
   &-short-txt {
@@ -37,8 +55,19 @@
 
     align-items: center;
 
+    @include media('<tablet') {
+      align-items: flex-start;
+    }
+
     p {
       margin-right: 8px;
+      color: $mmk-white;
+    }
+
+    img {
+      @include media('<tablet') {
+        width: 66px;
+      }
     }
   }
 }

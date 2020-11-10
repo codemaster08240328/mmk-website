@@ -4,7 +4,7 @@ import LogoImg from '../assets/logo.png';
 import DownImg from '../assets/downarrow.png';
 import './header.scss';
 
-const links = [
+export const links = [
   {
     href: '/credit-score',
     label: 'Credit Score'

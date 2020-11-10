@@ -2,11 +2,19 @@
   background: color('gradient', 'header');
   padding-bottom: 125px;
 
+  @include media('<tablet') {
+    padding-bottom: 72px;
+  }
+
   &-content {
     display: flex;
     color: $mmk-white; 
     max-width: 1440px;
     margin: 0 auto;
+
+    @include media('<tablet') {
+      display: block;
+    }
 
     &-hero {
       &-title {
@@ -16,13 +24,42 @@
       &-subtitle {
         @include font-hero-subtitle();
         margin-top: 12px;
+
+        @include media('<tablet') {
+          padding: 0 56px;
+          margin-top: 24px;
+        }
       }
+    }
+
+    .mobile-header-content-btn {
+      display: block;
+      height: 56px;
+      width: 240px;
+      font-family: "Helvetica Neue";
+      color: $mmk-white;
+      border-radius: 24px;
+      margin: 0 auto;
+      margin-top: 45px;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.0378437px;
+      font-weight: 700;
     }
 
     &-text {
       padding: 0 52px;
       margin-top: 136px;
       width: 50%;
+
+      @include media('<tablet') {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 50px;
+      }
     }
 
     &-btn {
@@ -42,6 +79,16 @@
       display: inline-flex;
       margin-top: 100px;
       width: 50%;
+      
+      @include media('<tablet') {
+        width: calc(100% - 80px);
+        margin-top: 32px;
+        padding: 0 40px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -76,4 +123,29 @@ button {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.0336389px;
+
+  @include media('<tablet') {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: normal;
+  }
+}
+
+.desktop {
+  @include media('<tablet') {
+    display: none!important;
+  }
+}
+
+.mobile {
+  @include media('>=tablet') {
+    display: none!important;
+  }
+}
+
+.mobile-page-row {
+  @include media('<tablet') {
+    display: flex!important;
+    flex-direction: row!important;
+  }
 }

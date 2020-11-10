@@ -114,9 +114,10 @@ const Footer = () => {
         <div className="footer-content-wrapper">
           <div className="footer-contact">
             <h4 className="color-text-white">Questions</h4>
-            <div className="p2-small color-text-white mt-12">Email us at: <br /> askus[at]mymoneykarma[dot]com</div>
+            <div className="p2-small color-text-white mt-12 desktop">Email us at: <br /> askus[at]mymoneykarma[dot]com</div>
+            <div className="p2-small color-text-white mt-12 mobile">Email us at: askus[at]mymoneykarma[dot]com</div>
           </div>
-          <div className="divider mt-80"></div>
+          <div className="divider mt-80 mmt-16"></div>
           <div className="footer-social">
             {socialIcons.map((item, index) => (
               <a href={item.href} key={index.toString()}>
@@ -129,7 +130,7 @@ const Footer = () => {
             <div className="p2-small color-text-white">
               Disclaimer: The credit score provided by mymoneykarma is from Equifax. Visitors looking for their credit scores from any other Credit Information Company, are requested to refer to the official website of the concerned company for further details. Any reference to these Credit Information Companies on mymoneykarma website are strictly informative; mymoneykarma doesn't directly transact with them.
             </div>
-            <div className="page-row mt-98">
+            <div className="page-row mt-98 mobile-page-row mmt-30">
               <div className="p2-small color-text-white">
                 © 2018 mymoneykarma, All Rights ReservedTerms and <br /> ConditionsPrivacy PolicySecurity Disclaimer
               </div>

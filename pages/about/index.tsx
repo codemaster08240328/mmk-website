@@ -3,6 +3,7 @@ import React from 'react';
 import './style.scss';
 import Layout from '../../components/Layout';
 import HeaderNav from '../../components/HeaderNav';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 import HomeImg from '../../assets/mission/revenue.png';
 import RamImg from '../../assets/mission/ramsubra.png';
 import VarunImg from '../../assets/mission/varun.png';
@@ -135,6 +136,7 @@ const About = () => {
     <Layout title="Our mission">
       <div className="header">
         <HeaderNav />
+        <MobileHeaderNav />
         <div className="header-content">
           <div className="header-content-text" style={{marginTop: 200}} >
             <div className="header-content-hero-title">Our mission</div>

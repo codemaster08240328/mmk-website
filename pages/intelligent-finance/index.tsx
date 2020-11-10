@@ -31,6 +31,7 @@ import AdityaImg from '../../assets/finance/aditya-birla.png';
 
 import HomeImg from '../../assets/finance/home.png';
 import './style.scss';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const contents = [
   {
@@ -58,14 +59,18 @@ const IntelligentFinance = () => (
   <Layout title="Intelligent Finance">
     <div className="header">
       <HeaderNav />
+      <MobileHeaderNav />
       <div className="header-content">
         <div className="header-content-text" >
           <div className="header-content-hero-title">Intelligent Finance</div>
           <div className="header-content-hero-subtitle">Faster, easier and secure way of managing your money.</div>
-          <button className="mmk-btn header-content-btn active-btn">Get started</button>
+          <button className="mmk-btn header-content-btn active-btn desktop">Get started</button>
         </div>
         <div className="header-content-img-wrapper">
           <img src={HomeImg} alt="home_img" />
+        </div>
+        <div>
+          <button className="mmk-btn mobile-header-content-btn active-btn mobile">Sign Up</button>
         </div>
       </div>
     </div>
@@ -78,7 +83,7 @@ const IntelligentFinance = () => (
             </div>
             <div className="page-row-item-content">
               <h1>{item.title}</h1>
-              <p className="pr-40 mt-24">{item.description}</p>
+              <p className="pr-40 mt-24 mmt-18 mprl-84">{item.description}</p>
             </div>
           </div>
         ))

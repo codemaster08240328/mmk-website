@@ -112,6 +112,11 @@ h1 {
 
   color: #000000;
   margin: 0;
+
+  @include media('<tablet') {
+    font-size: 21px;
+    line-height: 25.64px
+  }
 }
 
 h2 {
@@ -151,6 +156,14 @@ h4 {
 
   color: #30109C;
   margin: 0;
+
+  @include media('<tablet') {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    // letter-spacing: 0.0378437px;
+    // text-transform: uppercase;
+  }
 }
 
 p {
@@ -160,6 +173,11 @@ p {
   line-height: 30px;
   color: rgba(5, 5, 5, 0.8);
   margin: 0;
+
+  @include media('<tablet') {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 ul {
@@ -177,9 +195,38 @@ li {
 
 .page-row {
   display: inline-flex;
+
+  @include media('<tablet') {
+    flex-direction: column-reverse;
+  }
 }
 
 .reversed {
   flex-direction: row-reverse;
+
+  @include media('<tablet') {
+    flex-direction: column-reverse;
+  }
 }
 
+.mprl-84 {
+  @include media('<tablet') {
+    padding: 0 84px!important;
+  }
+}
+
+.mmt {
+  @include media('<tablet') {
+    &-16 {
+      margin-top: 16px;
+    }
+
+    &-18 {
+      margin-top: 18px;
+    }
+
+    &-30 {
+      margin-top: 30px!important;
+    }
+  }
+}
