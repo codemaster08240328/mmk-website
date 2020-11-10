@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { links } from '../HeaderNav';
+// import { links } from '../HeaderNav';
 import LogoImg from '../../assets/mobile-logo.png';
 import HamburgerIcon from '../../assets/hamburger.png';
 
