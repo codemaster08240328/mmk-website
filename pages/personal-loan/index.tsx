@@ -6,6 +6,7 @@ import ClayImg from '../../assets/personalLoan/clay-mockup.png';
 
 import './style.scss';
 import FAQ, { Tq_a } from '../../components/FAQ';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const steps = [
   {
@@ -125,6 +126,7 @@ const PersonalLoan = () => {
     <Layout title="Personal Loans">
       <div className="header">
         <HeaderNav />
+        <MobileHeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
             <div className="header-content-hero-title">Personal Loans at Lowest Interest Rates</div>
@@ -133,9 +135,12 @@ const PersonalLoan = () => {
           <div className="header-content-img-wrapper">
             <img src={HomeImg} alt="home_img" />
           </div>
+          <div>
+            <button className="mmk-btn mobile-header-content-btn active-btn mobile">See my options</button>
+          </div>
         </div>
       </div>
-      <div className="page-row pl-content">
+      <div className="page-row pl-content mobile-not-reversed">
         <div className="pl-content-text">
           <h1>Why get a personal loan from us?</h1>
           <ul>

@@ -19,6 +19,11 @@ import PomonaImg from '../../assets/mission/pomona.png'
 import LifeImg from '../../assets/mission/life.png'
 import FidelityImg from '../../assets/mission/fidelity.png'
 import CitiBankImg from '../../assets/mission/citibank.png';
+import TrustImg from '../../assets/mission/value-trust.png';
+import CustomerImg from '../../assets/mission/value-customer-first.png';
+import IntegrityImg from '../../assets/mission/value-integrity.png';
+import ExcellenceImg from '../../assets/mission/value-excellence.png';
+import RaiseBarImg from '../../assets/mission/value-raise-bar.png';
 import TeamItem, { TProps } from './TeamItem';
 
 const teams: Array<TProps> = [
@@ -131,6 +136,38 @@ const teams: Array<TProps> = [
 //   },
 // ]
 
+const values = [
+  {
+    img: TrustImg,
+    title: 'Trust',
+    description: 'We work tirelessly to earn and keep customer trust by helping them to save money or to make money.' 
+  }, {
+    img: CustomerImg,
+    title: 'Customers first',
+    description: 'We exist because of our customers and obsess to provide them with the best experience. We consider the impact on lives before we think about our interest.'
+  }, {
+    img: IntegrityImg,
+    title: 'Integrity',
+    description: 'We act with integrity at all times and do what’s right even when no one is watching.'
+  }, {
+    img: ExcellenceImg,
+    title: 'Excellence',
+    description: 'We demand excellence and have relentlessly high standartsfor our selves and the productsand services we deliver.'
+  }, {
+    img: RaiseBarImg,
+    title: 'Raise the bar',
+    description: 'We continuosly push the envelope, make bold bets and redefine the paradigm.'
+  }
+]
+
+const ValueItem: React.FC<{imgSrc: string, title: string, description: string}> = ({imgSrc, title, description}) => (
+  <div className="about-value-item">
+    <img src={imgSrc} alt={title}/>
+    <h2>{title}</h2>
+    <p>{description}</p>
+  </div>
+);
+
 const About = () => {
   return (
     <Layout title="Our mission">
@@ -156,14 +193,19 @@ const About = () => {
           “We are a group of Stanford alumni with a strong background in banking and technology, passionate about creating a positive impact in the lives of people by helping them manage their finances better. We believe that no two people have the same financial situation, so they should not be given one-size-fits-all financial recommendations. <br /><br /> We are providing <b>FREE</b> and <b>EASY</b> access to personalized financial management using proprietary algorithms.”
           </p>
         </div>
+        <div className="about-value">
+          <h1>Value</h1>
+          <div className="about-value-items">
+            {values.map(item => (<ValueItem title={item.title} description={item.description} imgSrc={item.img} key={item.title} />))}
+          </div>
+        </div>
         <div className="about-team">
           <h1>Our Team</h1>
           <div className="about-team-members">
             {
               teams.map((item, index) => (
-                <div className="about-team-item">
+                <div className="about-team-item" key={index.toString()}>
                   <TeamItem
-                    key={index.toString()}
                     social={item.social}
                     name={item.name}
                     bank1={item.bank1}

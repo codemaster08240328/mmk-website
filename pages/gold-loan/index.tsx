@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import HeaderNav from '../../components/HeaderNav';
 import HomeImg from '../../assets/goldLoan/home.png';
 import GoldLoanImg from '../../assets/goldLoan/goldLoan.png';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const steps = [
   {
@@ -26,17 +27,21 @@ const GoldLoan = () => {
     <Layout title="Gold Loans">
       <div className="header">
         <HeaderNav />
+        <MobileHeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
             <div className="header-content-hero-title">No stress gold loans from the market leaders</div>
-            <button className="mmk-btn header-content-btn active-btn">Start now</button>
+            <button className="mmk-btn header-content-btn active-btn desktop">Start now</button>
           </div>
           <div className="header-content-img-wrapper w-35">
             <img src={HomeImg} alt="home_img" />
           </div>
+          <div>
+            <button className="mmk-btn mobile-header-content-btn active-btn mobile">See my options</button>
+          </div>
         </div>
       </div>
-      <div className="page-row gl-content">
+      <div className="page-row gl-content mobile-not-reversed">
         <div className="gl-content-text">
           <h1>Why get your gold loan from us?</h1>
           <ul>

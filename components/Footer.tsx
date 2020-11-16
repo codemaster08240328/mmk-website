@@ -37,27 +37,27 @@ const Footer = () => {
             <div className="link-wrapper-tool">
               <div className="link-title">TOOLS</div>
               <div className="links">
-                <a href="">Financial Tools</a>
-                <a href="">Credit Card Bill</a>
-                <a href="">Payment</a>
-                <a href="">Credit Card Customer Care</a>
-                <a href="">EMI Calculator for Home Loan</a>
-                <a href="">EMI Calculator for Car Loan</a>
-                <a href="">EMI Calculator for Personal Loan</a>
-                <a href="">EMI Calculator for Personal Loan</a>
-                <a href="">Home loan checkup</a>
-                <a href="">Aadhar Enabled</a>
-                <a href="">Payment System</a>
-                <a href="">E Wallet</a>
-                <a href="">UPI (Unified Payment Interface)</a>
-                <a href="">USSD (Unstructured Supplementary Service Data)</a>
+                <a className="mobile-link-item" href="">Financial Tools</a>
+                <a className="mobile-link-item" href="">Credit Card Bill</a>
+                <a className="mobile-link-item" href="">Payment</a>
+                <a className="mobile-link-item" href="">Credit Card Customer Care</a>
+                <a className="mobile-link-item" href="">EMI Calculator for Home Loan</a>
+                <a className="mobile-link-item" href="">EMI Calculator for Car Loan</a>
+                <a className="mobile-link-item" href="">EMI Calculator for Personal Loan</a>
+                <a className="mobile-link-item" href="">EMI Calculator for Personal Loan</a>
+                <a className="mobile-link-item" href="">Home loan checkup</a>
+                <a className="mobile-link-item" href="">Aadhar Enabled</a>
+                <a className="mobile-link-item" href="">Payment System</a>
+                <a className="mobile-link-item" href="">E Wallet</a>
+                <a className="mobile-link-item" href="">UPI (Unified Payment Interface)</a>
+                <a className="mobile-link-item" href="">USSD (Unstructured Supplementary Service Data)</a>
               </div>
             </div>
             <div>
               <div className="link-title-bank">Bank Logins</div>
               <div className="link-wrapper-bank">
                 <div className="links">
-                  <a href="">SBI Online</a>
+                  <a  href="">SBI Online</a>
                   <a href="">Axis Bank Login</a>
                   <a href="">ICICI Bank</a>
                   <a href="">HDFC Bank</a>
@@ -65,7 +65,7 @@ const Footer = () => {
                   <a href="">HDFC netbanking</a>
                   <a href="">Kotak Bank Login</a>
                   <a href="">Savings Account</a>
-                  <a href="">Driving Licence</a>
+                  <a href="">Driving Licence</a> 
                   <a href="">Two Wheeler</a>
                   <a href="">Mobile Banking</a>
                 </div>
@@ -99,12 +99,12 @@ const Footer = () => {
             <div>
               <div className="link-title">Gold Rate Today</div>
               <div className="links">
-                <a href=""> Gold Rate in India </a>
-                <a href=""> Gold Rate Bangalore </a>
-                <a href=""> Gold Rate Chennai </a>
-                <a href=""> Gold Rate Mumbai </a>
-                <a href=""> Gold Rate Delhi </a>
-                <a href=""> Gold Rate Hyderabad </a>
+                <a className="mobile-link-item" href=""> Gold Rate in India </a>
+                <a className="mobile-link-item" href=""> Gold Rate Bangalore </a>
+                <a className="mobile-link-item" href=""> Gold Rate Chennai </a>
+                <a className="mobile-link-item" href=""> Gold Rate Mumbai </a>
+                <a className="mobile-link-item" href=""> Gold Rate Delhi </a>
+                <a className="mobile-link-item" href=""> Gold Rate Hyderabad </a>
               </div>
             </div>
           </div>

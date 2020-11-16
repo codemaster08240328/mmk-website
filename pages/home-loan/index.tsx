@@ -6,6 +6,7 @@ import HeaderNav from '../../components/HeaderNav';
 import HomeImg from '../../assets/homeLoan/home.png';
 import PexelsImg from '../../assets/homeLoan/pexels.png';
 import FAQ, { Tq_a } from '../../components/FAQ';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const steps = [
   {
@@ -188,25 +189,31 @@ const HomeLoan = () => {
     <Layout title="Home Loans">
       <div className="header">
         <HeaderNav />
+        <MobileHeaderNav />
         <div className="header-content">
           <div className="header-content-text" >
             <div className="header-content-hero-title">Home Loans at Lowest Interest Rates</div>
             <div className="header-content-hero-subtitle">
               A home is a huge investment, and buying a home can be stressful. We help you understand your options and simhlify your journey toward owning your dream home.
             </div>
-            <button className="mmk-btn header-content-btn active-btn">See my options</button>
+            <button className="mmk-btn header-content-btn active-btn desktop">See my options</button>
           </div>
           <div className="header-content-img-wrapper">
             <img src={HomeImg} alt="home_img" />
           </div>
+          <div>
+            <button className="mmk-btn mobile-header-content-btn active-btn mobile">See my options</button>
+          </div>
         </div>
       </div>
-      <div className="page-row hl-content">
+      <div className="page-row hl-content mobile-not-reversed">
         <div className="hl-content-text">
           <h1>Why get your home loan from us?</h1>
           <ul>
-            <li><p>Save time by evaluating offers from many of <br /> the top providers in the market in one place.</p></li>
-            <li><p>Get matched with the cheapest home loan offer <br /> in the market.</p></li>
+            <li className="desktop"><p>Save time by evaluating offers from many of <br /> the top providers in the market in one place.</p></li>
+            <li className="mobile"><p>Save time by evaluating offers from many of the top providers in the market in one place.</p></li>
+            <li className="desktop"><p>Get matched with the cheapest home loan offer <br /> in the market.</p></li>
+            <li className="mobile"><p>Get matched with the cheapest home loan offer in the market.</p></li>
             <li><p>Get expedited approvals.</p></li>
           </ul>
         </div>

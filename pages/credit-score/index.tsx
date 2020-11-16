@@ -6,6 +6,7 @@ import HeaderNav from '../../components/HeaderNav';
 import CreditImg from '../../assets/creditScore/credit.png';
 import HomeImg from '../../assets/creditScore/credit_score.png';
 import FAQ, { Tq_a } from '../../components/FAQ';
+import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const steps = [
   {
@@ -197,26 +198,32 @@ const Q_As: Array<Tq_a> = [{
 const CreditScore = () => {
   return (
     <Layout title="Credit Score">
-      <div className="header pb-0">
+      <div className="header pb-0 mpb-44">
         <HeaderNav />
+        <MobileHeaderNav />
         <div className="header-content">
-          <div className="header-content-text w-65"  style={{marginTop: 180}}>
+          <div className="header-content-text w-65 mmt-50"  style={{marginTop: 180}}>
             <div className="header-content-hero-title">Credit Scores are Complex</div>
             <div className="header-content-hero-subtitle">We simplify them for you.</div>
-            <button className="mmk-btn header-content-btn active-btn">Start now</button>
+            <button className="mmk-btn header-content-btn active-btn desktop">Start now</button>
           </div>
           <div className="header-content-img-wrapper w-35">
             <img src={HomeImg} alt="home_img" />
           </div>
+          <div>
+            <button className="mmk-btn mobile-header-content-btn active-btn mobile">See my options</button>
+          </div>
         </div>
       </div>
-      <div className="page-row cs-content">
+      <div className="page-row cs-content mobile-not-reversed">
         <div className="cs-content-text">
           <h1>Why us?</h1>
           <ul>
             <li><p>Free credit score analysis.</p></li>
-            <li><p>Simplified credit report to help you understand <br /> your score.</p></li>
-            <li><p>Personalized credit score insights to help you <br /> improve your score.</p></li>
+            <li className="desktop"><p >Simplified credit report to help you understand <br /> your score.</p></li>
+            <li className="desktop"><p>Personalized credit score insights to help you <br /> improve your score.</p></li>
+            <li className="mobile"><p>Simplified credit report to help you understand your score.</p></li>
+            <li className="mobile"><p>Personalized credit score insights to help you improve your score.</p></li>
           </ul>
         </div>
         <div className="cs-content-img-wrapper">

@@ -7,6 +7,11 @@
   width: 100%;
   display: flex!important;
 
+  @include media('<tablet') {
+    padding: 28px 32px;
+    width: calc(100% - 64px);
+  }
+
   &-text {
     margin-right: 50px;
     width: 50%;
@@ -16,9 +21,38 @@
     flex-direction: column;
     justify-content: center;
 
+    @include media('<tablet') {
+      width: 100%;
+      text-align: center;
+
+      h1 {
+        padding: 0 18px;
+      }
+    }
+
     ul {
       margin-top: 26px;
       // list-style-image: url('../../assets/Checkbox.png');
+
+      @include media('<tablet') {
+        padding: 0 44px;
+        text-align: left;
+        margin-top: 0px;
+
+        li {
+          margin-top: 8px!important;
+
+          p {
+            font-size: 14px;
+            line-height: 16.7px;
+          }
+
+          &::marker {
+            font-size: 8px;
+            margin-right: 4px;
+          }
+        }
+      }
 
       li {
         margin-top: 13px;
@@ -36,6 +70,15 @@
 
   &-img-wrapper {
     width: 50%;
+
+    @include media('<tablet') {
+      width: 100%;
+      margin-top: 32px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -45,6 +88,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include media('<tablet') {
+    padding: 40px 0;
+    text-align: center;
+  }
   
   &-steps {
     margin-top: 88px;
@@ -53,9 +101,31 @@
     max-width: 1440px;
     width: calc(100% - 40px);
     padding: 0 20px;
+
+    @include media('<tablet') {
+      flex-direction: column;
+      margin-top: 0px;
+      padding: 0 52px;
+      width: calc(100% - 104px);
+    }
+    
     
     &-item {
       width: 345px;
+
+      @include media('<tablet') {
+        margin-top: 40px;
+        width: 100%;
+
+        h4 {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
     }
   }
 }

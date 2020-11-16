@@ -17,6 +17,31 @@
     }
   }
 
+  .about-value {
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 168px;
+    padding: 0 72px;
+
+    &-items {
+      // display: inline-flex;
+      // justify-content: space-around;
+      margin-top: 52px;
+    }
+
+    &-item {
+      width: calc(33.33% - 88px);
+      display: inline-table;
+      padding: 0 44px;
+      margin-top: 40px;
+
+      h2 {
+        margin: 26px 0;
+      }
+    }
+  }
+
   .about-team {
     margin: 0 auto;
     margin-top: 112px;
