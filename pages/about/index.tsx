@@ -25,6 +25,7 @@ import IntegrityImg from '../../assets/mission/value-integrity.png';
 import ExcellenceImg from '../../assets/mission/value-excellence.png';
 import RaiseBarImg from '../../assets/mission/value-raise-bar.png';
 import TeamItem, { TProps } from './TeamItem';
+import MobileTeamItem from './MobileTeamItem';
 
 const teams: Array<TProps> = [
   {
@@ -188,8 +189,8 @@ const About = () => {
       </div>
       <div className="about-content">
         <div className="about-who">
-          <h1 className="mt-91">Leadership</h1>
-          <p>
+          <h1 className="mt-91 mmt-32">Leadership</h1>
+          <p className="about-who-description">
           “We are a group of Stanford alumni with a strong background in banking and technology, passionate about creating a positive impact in the lives of people by helping them manage their finances better. We believe that no two people have the same financial situation, so they should not be given one-size-fits-all financial recommendations. <br /><br /> We are providing <b>FREE</b> and <b>EASY</b> access to personalized financial management using proprietary algorithms.”
           </p>
         </div>
@@ -214,9 +215,22 @@ const About = () => {
                     desc={item.desc}
                     mission={item.mission}
                   />
+                  <MobileTeamItem 
+                    social={item.social}
+                    name={item.name}
+                    bank1={item.bank1}
+                    bank2={item.bank2}
+                    img={item.img}
+                    mission={item.mission}
+                  />
                 </div>
               ))
             }
+          </div>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            <div className="mobile-view-more-button">
+              View more
+            </div>
           </div>
         </div>
         {/* <div className="about-advisers">

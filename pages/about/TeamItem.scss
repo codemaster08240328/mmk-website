@@ -4,6 +4,10 @@
   // display: flex;
   width: 435px;
 
+  @include media('<tablet') {
+    display: none;
+  }
+
   
   &-img-wrapper {
     position: relative;
@@ -72,5 +76,50 @@
 
     color: rgba(11, 3, 3, 0.8);
     width: 315px;
+  }
+}
+
+.mobile-team-item {
+  @include media('>=tablet') {
+    display: none;
+  }
+
+  margin-bottom: 42px;
+
+  &-img {
+    width: 210px;
+    height: 210px;
+  }
+
+  &-name {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.48px;
+    line-height: 20px;
+
+    color: #3913B8;
+    margin-top: 25px;
+  }
+
+  &-mission {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.48px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    margin-top: 12px;
+  }
+
+  &-linkimg {
+    margin-top: 8px;
+  }
+
+  &-bankimg {
+    margin-top: 16px;
   }
 }
