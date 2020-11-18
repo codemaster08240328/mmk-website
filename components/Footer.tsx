@@ -37,74 +37,71 @@ const Footer = () => {
             <div className="link-wrapper-tool">
               <div className="link-title">TOOLS</div>
               <div className="links">
-                <a className="mobile-link-item" href="">Financial Tools</a>
-                <a className="mobile-link-item" href="">Credit Card Bill</a>
-                <a className="mobile-link-item" href="">Payment</a>
-                <a className="mobile-link-item" href="">Credit Card Customer Care</a>
-                <a className="mobile-link-item" href="">EMI Calculator for Home Loan</a>
-                <a className="mobile-link-item" href="">EMI Calculator for Car Loan</a>
-                <a className="mobile-link-item" href="">EMI Calculator for Personal Loan</a>
-                <a className="mobile-link-item" href="">EMI Calculator for Personal Loan</a>
-                <a className="mobile-link-item" href="">Home loan checkup</a>
-                <a className="mobile-link-item" href="">Aadhar Enabled</a>
-                <a className="mobile-link-item" href="">Payment System</a>
-                <a className="mobile-link-item" href="">E Wallet</a>
-                <a className="mobile-link-item" href="">UPI (Unified Payment Interface)</a>
-                <a className="mobile-link-item" href="">USSD (Unstructured Supplementary Service Data)</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/tools.html">Financial Tools</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/info-credit-cards/credit-card-bill-payment.html">Credit Card Bill Payment</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/info-credit-cards/credit-card-customer-care.html">Credit Card Customer Care</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/home-loan-emi-calculator.html">EMI Calculator for Home Loan</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/auto-and-car-loan-emi-calculator-in-india.html">EMI Calculator for Car Loan</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/personal-loan-emi-calculator.html">EMI Calculator for Personal Loan</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/home-loan-checkup.html">Home loan checkup</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/aadhar-payment-system.html">Aadhar Enabled Payment System</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/e-wallet.html">E Wallet</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/unified-payment-interface.html">UPI (Unified Payment Interface)</a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/ussd.html">USSD (Unstructured Supplementary Service Data)</a>
               </div>
             </div>
             <div>
               <div className="link-title-bank">Bank Logins</div>
               <div className="link-wrapper-bank">
                 <div className="links">
-                  <a  href="">SBI Online</a>
-                  <a href="">Axis Bank Login</a>
-                  <a href="">ICICI Bank</a>
-                  <a href="">HDFC Bank</a>
-                  <a href="">ICICI netbanking</a>
-                  <a href="">HDFC netbanking</a>
-                  <a href="">Kotak Bank Login</a>
-                  <a href="">Savings Account</a>
-                  <a href="">Driving Licence</a> 
-                  <a href="">Two Wheeler</a>
-                  <a href="">Mobile Banking</a>
+                  <a  href="https://mymoneykarma.com/sbi-online.html">SBI Online</a>
+                  <a href="https://mymoneykarma.com/axis-bank-login.html">Axis Bank Login</a>
+                  <a href="https://mymoneykarma.com/icici-bank.html">ICICI Bank</a>
+                  <a href="https://mymoneykarma.com/hdfc-bank/">HDFC Bank</a>
+                  <a href="https://mymoneykarma.com/icici-net-bank.html">ICICI netbanking</a>
+                  <a href="https://mymoneykarma.com/hdfc-net-bank.html">HDFC netbanking</a>
+                  <a href="https://mymoneykarma.com/kotak-bank-login.html">Kotak Bank Login</a>
+                  <a href="https://mymoneykarma.com/savings-account">Savings Account</a>
+                  <a href="https://mymoneykarma.com/driving-licence/">Driving Licence</a> 
+                  <a href="https://mymoneykarma.com/two-wheeler">Two Wheeler</a>
+                  <a href="https://mymoneykarma.com/mobile-banking">Mobile Banking</a>
                 </div>
                 <div className="links">
-                  <a href="">Andhra Bank Login</a>
-                  <a href="">Canara Bank Login</a>
-                  <a href="">IDBI Bank Login</a>
-                  <a href="">LIC Login</a>
-                  <a href="">Indusind Bank Login</a>
-                  <a href="">Citi Bank Login</a>
-                  <a href="">PNB NetBanking</a>
-                  <a href="">Recurring Deposit</a>
-                  <a href="">PAN</a>
-                  <a href="">Gas</a>
-                  <a href="">Holiday</a>
+                  <a href="https://mymoneykarma.com/andhra-bank-login.html">Andhra Bank Login</a>
+                  <a href="https://mymoneykarma.com/Canara-bank-login.html">Canara Bank Login</a>
+                  <a href="https://mymoneykarma.com/idbi-bank-login.html">IDBI Bank Login</a>
+                  <a href="https://mymoneykarma.com/lig-login.html">LIC Login</a>
+                  <a href="https://mymoneykarma.com/indusind-bank-login.html">Indusind Bank Login</a>
+                  <a href="https://mymoneykarma.com/Citi-bank-login.html">Citi Bank Login</a>
+                  <a href="https://mymoneykarma.com/pnb-netbanking.html">PNB NetBanking</a>
+                  <a href="https://mymoneykarma.com/recurring-deposit">Recurring Deposit</a>
+                  <a href="https://mymoneykarma.com/pan.html">PAN</a>
+                  <a href="https://mymoneykarma.com/gas">Gas</a>
+                  <a href="https://mymoneykarma.com/holidays">Holiday</a>
                 </div>
                 <div className="links">
-                  <a href="">Passport</a>
-                  <a href="">Andhaar Card</a>
-                  <a href="">EPFO</a>
-                  <a href="">Share Market</a>
-                  <a href="">Kotak Bank Login</a>
-                  <a href="">Yes Bank Login</a>
-                  <a href="">Tax</a>
-                  <a href="">EMI Calculator</a>
-                  <a href="">Voter ID</a>
-                  <a href="">Bank of Baroda NetBanking</a>
+                  <a href="https://mymoneykarma.com/passport/">Passport</a>
+                  <a href="https://mymoneykarma.com/aadhaar-card.html">Aadhaar Card</a>
+                  <a href="https://mymoneykarma.com/epfo.html">EPFO</a>
+                  <a href="https://mymoneykarma.com/share-market/index.html">Share Market</a>
+                  <a href="https://mymoneykarma.com/kotak-bank-login.html">Kotak Bank Login</a>
+                  <a href="https://mymoneykarma.com/yes-bank-login.html">Yes Bank Login</a>
+                  <a href="https://mymoneykarma.com/tax.html">Tax</a>
+                  <a href="https://mymoneykarma.com/emi-calculator">EMI Calculator</a>
+                  <a href="https://mymoneykarma.com/voterid">Voter ID</a>
+                  <a href="https://mymoneykarma.com/bank-of-baroda-netbanking.html">Bank of Baroda NetBanking</a>
                 </div>
               </div>
             </div>
             <div>
               <div className="link-title">Gold Rate Today</div>
               <div className="links">
-                <a className="mobile-link-item" href=""> Gold Rate in India </a>
-                <a className="mobile-link-item" href=""> Gold Rate Bangalore </a>
-                <a className="mobile-link-item" href=""> Gold Rate Chennai </a>
-                <a className="mobile-link-item" href=""> Gold Rate Mumbai </a>
-                <a className="mobile-link-item" href=""> Gold Rate Delhi </a>
-                <a className="mobile-link-item" href=""> Gold Rate Hyderabad </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-india.html"> Gold Rate in India </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-bangalore.html"> Gold Rate Bangalore </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-chennai.html"> Gold Rate Chennai </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-mumbai.html"> Gold Rate Mumbai </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-delhi.html"> Gold Rate Delhi </a>
+                <a className="mobile-link-item" href="https://www.mymoneykarma.com/gold-rate-hyderabad.html"> Gold Rate Hyderabad </a>
               </div>
             </div>
           </div>
