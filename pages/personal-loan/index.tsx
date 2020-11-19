@@ -131,6 +131,7 @@ const PersonalLoan = () => {
           <div className="header-content-text" >
             <div className="header-content-hero-title">Personal Loans at Lowest Interest Rates</div>
             <div className="header-content-hero-subtitle">Our recommendation engine finds the loan best suited to your needs in less than 60 seconds.</div>
+            <button className="mmk-btn header-content-btn active-btn desktop">See my options</button>
           </div>
           <div className="header-content-img-wrapper">
             <img src={HomeImg} alt="home_img" />
