@@ -18,7 +18,7 @@ const QACard = ({ question, answer, open }: Tq_a & { open: boolean }) => (
       <span>
         {question}
       </span>
-      <span>
+      <span className="question-plus-icon">
         +
       </span>
     </div>
