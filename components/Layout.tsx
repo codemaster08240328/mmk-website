@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import { useRouter, NextRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import Footer from './Footer';
 import './layout.scss';
 
