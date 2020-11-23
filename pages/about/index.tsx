@@ -228,7 +228,7 @@ const About = () => {
             }
           </div>
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <div className="mobile-view-more-button">
+            <div className="mobile-view-more-button mobile">
               View more
             </div>
           </div>

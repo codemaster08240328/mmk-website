@@ -22,17 +22,23 @@ const socialIcons = [{
   href: 'https://www.mymoneykarma.com/blog'
 }]
 
-const Footer = () => {
+type TFooterProps = {
+  linkVisible?: boolean
+}
+
+const Footer: React.FC<TFooterProps> = ({linkVisible}) => {
   const [openLink, setOpenLink] = useState(false)
   return (
     <div className="footer-wrapper">
       <div className="footer-links">
-        <div className="footer-links-title" onClick={() => setOpenLink(!openLink)}>
-          <h4 className="color-text-white">Most searched links +</h4>
-        </div>
+        {
+          !linkVisible && 
+          <div className="footer-links-title" onClick={() => setOpenLink(!openLink)}>
+            <h4 className="color-text-white">Most searched links +</h4>
+          </div>
+        }
         {
           openLink &&
-
           <div className="link-wrapper">
             <div className="link-wrapper-tool">
               <div className="link-title">TOOLS</div>
