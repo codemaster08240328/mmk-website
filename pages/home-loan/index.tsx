@@ -228,7 +228,7 @@ const HomeLoan = () => {
             steps.map((item, index) => (
               <div className="hl-hiw-steps-item" key={index.toString()}>
                 <h4>
-                  {`Step${index + 1}`}
+                  {`Step ${index + 1}`}
                 </h4>
                 <h2 className="mt-16">
                   {item.title}
