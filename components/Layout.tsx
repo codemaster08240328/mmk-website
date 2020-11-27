@@ -20,7 +20,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         <link rel="shortcut icon" href="/static/favicon.ico"></link>
       </Head>
       {children}
-      <Footer linkVisible={router.pathname === '/about'}/>
+      <Footer />
     </div>);
   }
 

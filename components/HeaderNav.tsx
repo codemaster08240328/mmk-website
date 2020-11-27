@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import LogoImg from '../assets/logo.png';
-import DownImg from '../assets/downarrow.png';
+import LogoImg from '../assets/Logo2.png';
+// import DownImg from '../assets/downarrow.png';
 import './header.scss';
 
 export const links = [
@@ -27,8 +27,7 @@ export const links = [
   },
   {
     href: '#',
-    label: 'Resources',
-    children: []
+    label: 'Resources'
   },
   {
     href: '/about',
@@ -48,7 +47,7 @@ const HeaderNav = () => {
       <div className="header-nav-items">
         {
           links.map((item, index) => {
-            if (!item.children?.length && item.label !== 'Resources')
+            if (!item.children?.length)
               return (
                 <Link href={item.href} key={index.toString()}>
                   <div className="header-nav-item">
@@ -61,7 +60,7 @@ const HeaderNav = () => {
                 <div key={index.toString()} className="header-menu">
                   <div className="header-nav-item" onClick={() => { if (selectedNav === item.label) { setSelectedNav('') } else { setSelectedNav(item.label) } }}>
                     {item.label}
-                    <img src={DownImg} style={{ marginLeft: 5 }} />
+                    {/* <img src={DownImg} style={{ marginLeft: 5 }} /> */}
                   </div>
                   {
                     selectedNav === item.label &&

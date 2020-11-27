@@ -10,21 +10,21 @@ import MobileHeaderNav from '../../components/mobile/HeaderNav';
 
 const steps = [
   {
-    title: 'Completely Free - No Fee or Charge',
+    title: 'Completely Free - \n No Fee or Charge',
     description: 'Save more than Rs 4300 and get your credit score analysis for free.'
   },
   {
     title: 'View your credit score & report anytime',
-    description: 'See your credit score and credit report analysis when ever you want to.'
+    description: 'See your credit score and credit report analysis whenever you want to.'
   },
   {
-    title: 'See ways to improve your credit score and save money',
-    description: 'See personalized insights to improve your score and save money on any debt you might have.'
+    title: 'Improve your credit score and save money',
+    description: 'Personalized insights to improve your score and save money on debt.'
   },
 ]
 
 const Q_As: Array<Tq_a> = [{
-  question: 'What is Credit Score?',
+  question: 'What is a credit score?',
   answer: (
     <div>
       A credit score is a 3-digit number that reflects your credit behavior. Consider it as marks awarded to you by various financial institutions for your financial conduct. A high credit score and your good performance are positively related and is an indicator of your good financial management skills, thus making you eligible for all kinds of loans. It would also enable you to bargain for better interest rates with your bank. On the other hand, a low credit score indicates that you are not managing your finances well and raises doubt on your creditworthiness.
@@ -44,7 +44,7 @@ const Q_As: Array<Tq_a> = [{
     </div>
   )
 }, {
-  question: 'Who can compute credit score?',
+  question: 'Who can compute a credit score?',
   answer: (
     <div>
       Credit score is calculated by Credit Information Companies. In India, there are 4 companies that perform this job. Equifax is one among them, and we give you your Equifax Credit Score. Now let’s try to understand how these companies actually calculate the credit score.
@@ -59,7 +59,7 @@ const Q_As: Array<Tq_a> = [{
     </div>
   )
 }, {
-  question: 'Why should I check my credit score?',
+  question: 'Why should I check the credit score?',
   answer: (
     <div>
       It is important to keep an eye on your credit score because it’s the best way to gauge your luck to get a new line of credit. <br /><br />
@@ -125,7 +125,7 @@ const Q_As: Array<Tq_a> = [{
     </div>
   )
 }, {
-  question: 'What is the difference between a Credit Rating, Credit Score, and a Credit Report?',
+  question: 'What is the difference between Credit Rating, Credit Score, and Credit Report?',
   answer: (
     <div>
       The term credit score, credit rating, and credit reports can be a bit confusing. However, the following list should help you understand each of the terms:
@@ -135,62 +135,6 @@ const Q_As: Array<Tq_a> = [{
       A credit score or credit rating can change on a monthly basis based on the information provided by banks and non-banking financial companies (NBFCs). If there are any changes, however, the information is stored on your credit report, and it stays for many years.
       <br /><br />
       A credit score is represented by a numerical value while the credit ratings are indicated in ratings such as A, A+, etc.
-    </div>
-  )
-}, {
-  question: 'Planing to apply for loan or credit card, Simple check points?',
-  answer: (
-    <div>
-      <ul>
-        <li>Your credit score must range between 300 and 900</li>
-        <li>90 % of the loans are typically approved for individuals with a score greater than 750</li>
-        <li>Higher the credit score, more likely are the chances of getting your loan approved</li>
-      </ul>
-    </div>
-  )
-}, {
-  question: 'How can I get a free credit score?',
-  answer: (
-    <div>
-      Talk to our customer centric team who will help you get your credit score for free in few minutes.
-    </div>
-  )
-}, {
-  question: 'What is Credit Score?',
-  answer: (
-    <div>
-      There are several credit information companies that gave a detailed synopsis of your financial health. They also allocate a score that reflects your creditworthiness. Based on this score, your eligibility to apply for Loans or Credit Cards is estimated.
-    </div>
-  )
-}, {
-  question: 'How do you know your credit score? Is the credit report through mymoneykarma free?',
-  answer: (
-    <div>
-      By using mymoneykarma credit analysis tool, you can get your credit report and check your credit history. It is a free service, and we don't charge anything.
-    </div>
-  )
-}, {
-  question: 'What are the benefits of having a good credit score?',
-  answer: (
-    <div>
-      <ul>
-        <li>Increased credit card limits</li>
-        <li>Better loan rates</li>
-        <li>Better credit card deals</li>
-      </ul>
-    </div>
-  )
-}, {
-  question: 'What are the top 5 credit score mistakes?',
-  answer: (
-    <div>
-      <ul>
-        <li>Making less than the minimum payment</li>
-        <li>Applying for too many new credit lines at once</li>
-        <li>Not keeping tabs on your card balance</li>
-        <li>Not maximizing your credit limit</li>
-        <li>Having credit limits that are too low</li>
-      </ul>
     </div>
   )
 }]

@@ -42,7 +42,7 @@ const contents = [
   {
     imgSrc: RecommendationImg,
     title: 'Find what is best for you',
-    description: 'Get personalized recommendations to improved your finances.'
+    description: 'Get personalized recommendations to improve your finances.'
   },
   {
     imgSrc: InterestSavingsImg,

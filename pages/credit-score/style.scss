@@ -109,6 +109,7 @@
     
     &-item {
       width: 345px;
+      white-space: pre-line;
 
       @include media('<tablet') {
         margin-top: 40px;

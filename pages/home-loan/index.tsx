@@ -194,7 +194,7 @@ const HomeLoan = () => {
           <div className="header-content-text" >
             <div className="header-content-hero-title">Home Loans at Lowest Interest Rates</div>
             <div className="header-content-hero-subtitle">
-              A home is a huge investment, and buying a home can be stressful. We help you understand your options and simhlify your journey toward owning your dream home.
+              A home is a huge investment, and buying a home can be stressful. We help you understand your options and simplify your journey toward owning your dream home.
             </div>
             <button className="mmk-btn header-content-btn active-btn desktop">See my options</button>
           </div>

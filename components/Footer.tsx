@@ -34,7 +34,14 @@ const Footer: React.FC<TFooterProps> = ({linkVisible}) => {
         {
           !linkVisible && 
           <div className="footer-links-title" onClick={() => setOpenLink(!openLink)}>
-            <h4 className="color-text-white">Most searched links +</h4>
+            {
+              openLink &&
+              <h4 className="color-text-white">Most searched links -</h4>
+            }
+            {
+              !openLink &&
+              <h4 className="color-text-white">Most searched links +</h4>
+            }
           </div>
         }
         {
