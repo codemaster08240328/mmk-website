@@ -1,5 +1,27 @@
 @font-face {
   font-family: 'HelveticaNeue';
   src: url('HelveticaNeue.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('Helvetica Neu Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('HelveticaNeue Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('SFProText-Regular.ttf');
+  font-weight: normal;
   font-style: normal;
 }

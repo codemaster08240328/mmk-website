@@ -120,7 +120,7 @@ h1 {
 }
 
 h2 {
-  font-family: Helvetica Neue;
+  font-family: 'HelveticaNeue';
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -141,7 +141,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Helvetica Neue";
+  font-family: "HelveticaNeue";
   font-size: 32px;
   line-height: 37px;
   letter-spacing: 0.0784906px;
@@ -151,7 +151,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Helvetica Neue';
+  font-family: 'HelveticaNeue';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -174,10 +174,10 @@ h4 {
 }
 
 p {
-  font-family: "Helvetica Neue";
+  font-family: "HelveticaNeue";
+  letter-spacing: 1.75px;
   font-size: 21px;
-  letter-spacing: 0.04px;
-  line-height: 30px;
+  line-height: 36px;
   color: rgba(5, 5, 5, 0.8);
   margin: 0;
 
@@ -193,7 +193,7 @@ ul {
 }
 
 li {
-  font-family: "Helvetica Neue";
+  font-family: "HelveticaNeue";
   font-size: 21px;
   letter-spacing: 0.04px;
   line-height: 30px;
