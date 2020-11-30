@@ -1,6 +1,4 @@
 import React from 'react';
-import InImg from '../../assets/mission/in.png';
-import IllustrationImg from '../../assets/mission/illustration.png';
 import './TeamItem.scss';
 
 export type TProps = {
