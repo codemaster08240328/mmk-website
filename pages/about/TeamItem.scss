@@ -1,8 +1,14 @@
 @import '../../styles/base.scss';
 
 .team-item {
-  // display: flex;
-  width: 435px;
+  display: flex;
+  flex-direction: column;
+  // width: 435px;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @include media('<tablet') {
     display: none;
@@ -16,39 +22,37 @@
       width: 288px;
       height: 288px;
       border-radius: 50%;
-      position: absolute;
+      // position: absolute;
       top: 122px;
       left: 85px;
     }
   }
 
-  &-content {
-    text-align: left;
-    margin-left: 72px;
-  }
-
   &-name {
-    font-family: 'Avenir Next';
+    font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;    
-    color: #3913B8;        
+    font-size: 21px;
+    line-height: 26px;    
+    color: #3913B8;      
+    margin-top: 34px;  
   }
 
   &-mission {
-    font-family: 'Avenir Next';
+    font-family: 'HelveticaNeue';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #0B0303;
+    // font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(11, 3, 3, 0.8);
+    margin-top: 6px;
   }
 
   &-social {
    display: flex; 
    margin-top: 6px;
-   align-items: flex-end;
+   align-items: center;
+   justify-content: center;
    
    a {
      height: 30px;

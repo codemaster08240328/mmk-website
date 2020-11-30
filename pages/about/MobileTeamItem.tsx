@@ -5,7 +5,7 @@ import './TeamItem.scss';
 export type TProps = {
   name: string,
   mission: string,
-  social: string,
+  social?: string,
   img: string,
   bank1: string,
   bank2: string
